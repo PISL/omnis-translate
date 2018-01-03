@@ -1,0 +1,3 @@
+
+Do ilEscapedChars.$search($ref.code=pcEscapeString|$ref.entityName=pcEscapeString,1,0,0,0)
+Quit method ilEscapedChars.symbol

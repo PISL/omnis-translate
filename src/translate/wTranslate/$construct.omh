@@ -1,0 +1,23 @@
+;  Enter your initialization code here
+
+Do $objects.oTranslate.$newref() Returns ioTranslate
+
+Do ilStrings.$define(icTextFrom,icTextTo)
+Do ilStrings.$add('This string can be translated.')
+
+Calculate icLangFrom as 'English'
+Calculate icLangCodeFrom as 'en'
+Do ioTranslate.$setSource(icLangCodeFrom)
+
+If len(ioTranslate.cAPIKey)
+	Do ioTranslate.$getLanguages(ilLangCodes,icLangCodeFrom,lrError) Returns lbOK
+	If lbOK
+		Calculate ibValidKey as kTrue     ;; enable the "Translate" button
+	Else
+		OK message Error {[lrError.message]}
+	End If
+Else
+	OK message Information {To use this application you must apply for an API key from Google.////Once you receive the key, enter it as the default value for the class variable cAPIKey in the object class oTranslate}
+End If
+
+Do $cinst.$behaviour()

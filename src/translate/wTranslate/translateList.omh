@@ -1,0 +1,20 @@
+Do ioTranslate.$setSource(icLangCodeFrom)
+Do ioTranslate.$setTarget(icLangCodeTo)
+
+Calculate llData as ilStrings
+Do llData.$cols.$add('lineno',kInteger,k32bitint)
+Do llData.$sendall($ref.lineno.$assign($sendallref.$line))
+Do llData.$search(isclear($ref.icTextFrom),1,0,1,1)
+Do llData.$remove(kListDeleteSelected)
+
+Do ioTranslate.$getTextTranslations(llData,lcErrorText) Returns lbOK
+If lbOK
+	;  assign the translations to ilStrings
+	For llData.$line from 1 to llData.$linecount step 1
+		Calculate ilStrings.[llData.lineno].icTextTo as llData.ictextTo
+	End For
+Else
+	OK message Translation Error {[lcErrorText]}
+End If
+
+Do $cinst.$behaviour()

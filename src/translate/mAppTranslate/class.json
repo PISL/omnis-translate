@@ -1,0 +1,36 @@
+{
+	"classtype": "kMenu",
+	"internalversion": 5,
+	"designtaskname": "Startup_Task",
+	"nextident": 1012,
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2018-01-02 13:29:48",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"enabled": true,
+		"external": true,
+		"helpfile": 0,
+		"helptext": "",
+		"inheritedorder": 0,
+		"issupercomponent": false,
+		"moddate": "2018-01-02 13:53:28",
+		"showascheckedout": false,
+		"title": {
+			"type": 0,
+			"calc": "Google Translate"
+		},
+		"userinfo": "",
+		"users": "12345678",
+		"version": ""
+	}
+}

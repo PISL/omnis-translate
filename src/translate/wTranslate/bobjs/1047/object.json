@@ -1,0 +1,27 @@
+{
+	"ident": 1047,
+	"order": 16387,
+	"objtype": "kLabel",
+	"properties": {
+		"align": "kCenterJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "",
+		"font": 1,
+		"fontsize": 10,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 19,
+		"left": 106,
+		"objlink": 0,
+		"text": "Google languages (right click to set from/to)",
+		"textcolor": "kColorWindowText",
+		"top": 6,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 257
+	}
+}

@@ -1,0 +1,8 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	If isclear(icLangFrom)|isclear(icLangTo)
+		OK message Warning {Source and Target languages must be set.}
+	Else
+		Do method translateList
+	End If
+	
+	Do $cinst.$behaviour()

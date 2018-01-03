@@ -1,0 +1,106 @@
+{
+	"classtype": "kObjectclass",
+	"internalversion": 13,
+	"designtaskname": "Startup_Task",
+	"cvardefs": [
+		{
+			"name": "cAPIKey",
+			"order": 1,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000,
+			"initval": "''",
+			"desc": "this is the API Key received from Google when you register to use their service"
+		}
+	],
+	"ivardefs": [
+		{
+			"name": "icJSON",
+			"order": 7,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "icSourceLang",
+			"order": 2,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 10,
+			"initval": "'en'"
+		},
+		{
+			"name": "icTargetLang",
+			"order": 3,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 10
+		},
+		{
+			"name": "icURL",
+			"order": 10,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000,
+			"initval": "con('https://translation.googleapis.com/language/translate/v2?key=',cAPIKey,'&source=',icSourceLang,'&target=',icTargetLang)"
+		},
+		{
+			"name": "ilEscapedChars",
+			"order": 12,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "ilHeaders",
+			"order": 1,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iorefRest",
+			"order": 4,
+			"type": "kObjectref",
+			"subtype": "oRest",
+			"sublen": 0
+		},
+		{
+			"name": "irJSON",
+			"order": 6,
+			"type": "kRow",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "irResponse",
+			"order": 9,
+			"type": "kRow",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "irResponseHeaders",
+			"order": 8,
+			"type": "kRow",
+			"subtype": "",
+			"sublen": 0
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2018-01-02 13:44:43",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2018-01-03 11:21:48",
+		"selfcontained": false,
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": "2"
+	}
+}

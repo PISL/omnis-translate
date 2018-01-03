@@ -1,0 +1,6 @@
+;  enter window behavioural code here
+
+Calculate $cinst.$objs.pbTranslate.$enabled as ibValidKey
+Calculate $cinst.$objs.pbTranslate.$tooltip as pick(ibValidKey,'obtain a valid API key from Google to enable translations','click to translate entires in the first column of the grid below')
+
+Do $cinst.$redraw()

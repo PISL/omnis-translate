@@ -1,0 +1,8 @@
+If ilLangCodes.name=icLangFrom
+	OK message Error {Source and Target languages must differ.}
+Else
+	Calculate icLangCodeTo as ilLangCodes.language
+	Calculate icLangTo as ilLangCodes.name
+End If
+
+Do $cinst.$behaviour()

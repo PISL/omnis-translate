@@ -1,0 +1,7 @@
+
+Do ilHeaders.$define(lcHeaderName,lcHeaderValue)
+Do ilHeaders.$add("content-type","application/json")
+
+Do method escapeChars Returns ilEscapedChars
+
+Do $objects.oRest.$newref() Returns iorefRest
